@@ -1,0 +1,1 @@
+# React Translations App Frontend

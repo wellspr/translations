@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+body, #root, .app {
+	min-height: 100vh;
+}
+
+.translation {
+	width: 100%;
+	margin-top: 8rem;
+
+	&__lang {
+		margin-bottom: 3rem;
+		width: 75%;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+}
+
+.form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input {
+	
+	&__text {
+		width: 75%;
+		padding: 1rem;
+		font-size: 2.1rem;
+		margin: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	&__lang {
+		width: 10rem;
+
+		&__label {
+			font-size: 1.4rem;
+			margin-right: 1rem;
+		}
+	}
+}
+
+.button {
+
+	background-color: rgba(1,1,1,0);
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	&__action {
+		font-size: 1.8rem;
+		padding: 1rem 2rem;
+		border-radius: 2rem;
+		background-color: rgba(200, 200, 200, 0.75);
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+}
+
+.result {
+	display: flex;
+	justify-content: center;
+	font-size: 3rem;
+	margin: 2rem;
+}
